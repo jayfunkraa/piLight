@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Light Controller</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
+</head>
+<body>
+<main class="container">
+    <div class="mt-5">
+        <div class="row">
+            <div class="text-center">
+                <a th:if="${!lightOn}" class="text-secondary" href="/light/on"><i
+                        class="far fa-lightbulb fa-10x"></i></a>
+                <a th:if="${lightOn}" class="text-warning" href="/light/off"><i class="fas fa-lightbulb fa-10x"></i></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+</body>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>
